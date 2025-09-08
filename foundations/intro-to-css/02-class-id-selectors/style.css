@@ -1,1 +1,17 @@
 /* Add CSS Styling */
+.container :nth-child(odd) {
+    background-color:lightpink;
+    font-family: Verdana, "deja-vu sans", serif;
+}
+.container :nth-child(2) {
+    color: blue;
+    font-size: 36px;
+}
+.container :nth-child(3) {
+ font-size: 24px;   
+}
+.container :nth-child(4) {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
