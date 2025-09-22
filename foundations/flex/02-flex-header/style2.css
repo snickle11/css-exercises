@@ -24,7 +24,9 @@ a {
   text-decoration: none;
 }
 
-.header { 
+/* SOLUTION */
+
+.header {
   padding: 8px;
   display: flex;
   align-items: center;
@@ -33,7 +35,7 @@ a {
 
 ul {
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   gap: 8px;
 }
