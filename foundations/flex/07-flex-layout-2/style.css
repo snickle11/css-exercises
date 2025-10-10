@@ -21,6 +21,16 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
 }
 
 .sidebar {
@@ -29,9 +39,10 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column; 
-  flex: 1 1 auto;
+  flex: 0 0 300px;
   justify-content: flex-start;
   justify-items: flex-start;
+  align-self: stretch;
 }
 
 .card {
@@ -39,6 +50,37 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   display: flex;
+  flex: 0 0 320px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 8px;
+  margin: 8px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
   flex: 1 1 auto;
-  justify-content: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+
+.main {
+  background: #f9f9f9;
+    flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+  gap: 16px;
+  padding: 16px;
+  overflow: auto;
+  align-items: stretch;
+  justify-items: stretch;
 }
