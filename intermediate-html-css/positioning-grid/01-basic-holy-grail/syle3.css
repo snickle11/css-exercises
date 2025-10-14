@@ -9,26 +9,11 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   grid-template-rows: auto 80px 1fr auto;
-  grid-template-columns: 300px 1fr; /* sidebar column + content column */
-  grid-template-areas:
-    "header header"
-    "sidebar nav" 
-    "sidebar article"
-    "footer footer";
-  gap: 16px;
+  grid-template-columns: 300px 1fr;
 }
 
-.header  { grid-area: header; }
-.sidebar { grid-area: sidebar; align-self: stretch; }
-.article { grid-area: article; }
-.footer  { grid-area: footer; }
-.nav {grid-area: nav }
-
-body {
-  display: grid;
-}
 .container div {
   padding: 15px;
   font-size: 32px;

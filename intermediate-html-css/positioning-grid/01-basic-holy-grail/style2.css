@@ -10,25 +10,16 @@ html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: auto 80px 1fr auto;
-  grid-template-columns: 300px 1fr; /* sidebar column + content column */
   grid-template-areas:
     "header header"
-    "sidebar nav" 
+    "sidebar nav"
     "sidebar article"
     "footer footer";
   gap: 16px;
 }
 
-.header  { grid-area: header; }
-.sidebar { grid-area: sidebar; align-self: stretch; }
-.article { grid-area: article; }
-.footer  { grid-area: footer; }
-.nav {grid-area: nav }
-
-body {
-  display: grid;
-}
 .container div {
   padding: 15px;
   font-size: 32px;
@@ -40,22 +31,27 @@ body {
 
 .header {
   background-color: #006157;
+  grid-area: header;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-area: sidebar;
 }
 
 .nav {
   background-color: #642cde;
+  grid-area: nav;   
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-area: article;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-area: footer;
 }
 
 .article p {
